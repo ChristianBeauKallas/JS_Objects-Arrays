@@ -4,19 +4,19 @@ console.log("EXERCISE 1:\n==========\n");
 const numbers = [2, 22, 12, 17, 18, 39, 129];
 
 function arraySum(numbers){
-    let sum = 0
-    for (let i = 0; i < numbers.length; i++){
-        sum += numbers[i];
-    }
-    console.log(sum);
+    let sum = 0;
+
+    numbers.forEach((number) => {
+        sum += number;
+    });
+    // for (let i = 0; i < numbers.length; i++){
+    //     sum += numbers[i];
+    // }
+    // console.log(sum);
     return sum;
     }
 
-arraySum(numbers)
-
-let arr1 = []
-
-
+console.log(arraySum(numbers));
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
